@@ -1,4 +1,4 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class TableMovies {
@@ -13,5 +13,5 @@ export class TableMovies {
   @Column()
   producers: string;
   @Column()
-  winner: boolean
+  winner: boolean;
 }

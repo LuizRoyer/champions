@@ -9,14 +9,15 @@ import { ProducerRepository } from './producers/reposotiries/producer.repository
 import { SaveMiddleware } from './utils/save.middleware';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(config ), TypeOrmModule.forFeature([TableMovies])],
+  imports: [
+    TypeOrmModule.forRoot(config),
+    TypeOrmModule.forFeature([TableMovies]),
+  ],
   controllers: [ProducerController],
   providers: [ProducerService, ReadCSVService, ProducerRepository],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer
-      .apply(SaveMiddleware)
-      .forRoutes('cats');
+    consumer.apply(SaveMiddleware).forRoutes('producer');
   }
 }

@@ -5,5 +5,5 @@ export const config: DataSourceOptions = {
   type: 'sqlite',
   database: '.db/sql',
   synchronize: true,
-  entities: [TableMovies]  
+  entities: [TableMovies],
 };

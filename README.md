@@ -1,6 +1,6 @@
 # Introduction
 
-TODO: MVP to attend the Oustsera test 
+TODO: MVP to attend the Oustsera test
 
 - Desenvolva uma API RESTful para possibilitar a leitura da lista de indicados e vencedores
   da categoria Pior Filme do Golden Raspberry Awards.
@@ -21,18 +21,18 @@ More details in public Especificação BackEnd and CSV file
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
 
 1. npm i
-2. npm run start 
-
+2. npm update
+3. npm run start
 
 - Required
   1 Node
-
+  2 NestJS
 
 # Build and Test
 
 TODO: Describe and show how to build your code and run the tests.
 
-1. npm run test or npm run test:watch
+1. npm run test
 
 # Contribute
 
