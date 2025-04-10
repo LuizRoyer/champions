@@ -13,7 +13,7 @@ export class ReadCSVService {
             fs.createReadStream(filePath)
                 .pipe(csv({ separator: ';' }))
                 .on('data', (data) => {
-                    const movie: TableMovies = {
+                    const movie: TableMovies = {                        
                         year: parseInt(data.year),
                         title: data.title,
                         studios: data.studios,

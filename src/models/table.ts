@@ -1,4 +1,4 @@
-interface TableMovies {
+interface TableMovies {    
     year: number;
     title: string;
     studios: string;
